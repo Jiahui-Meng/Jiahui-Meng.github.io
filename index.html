@@ -1,227 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jiahui Meng - Resume</title>
-  <style>
-    /* 通用样式与重置 */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      font-family: "Microsoft YaHei", Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-
-    a {
-      color: #0073b1;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    
-    /* 容器 */
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-    }
-
-    /* 顶部联系信息及照片 */
-    .contact {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .contact .profile-photo {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;        /* 根据需要裁剪/填充 */
-      border-radius: 50%;       /* 圆形头像 */
-      margin-bottom: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    .contact h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-    .contact p {
-      margin: 5px 0;
-    }
-
-    /* Section 标题 */
-    .section h2 {
-      font-weight: 600;
-      font-size: 1.25em;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
-      border-bottom: 2px solid #0073b1;
-    }
-
-    /* Section 通用 */
-    .section {
-      margin-bottom: 30px;
-    }
-    .section p {
-      margin: 5px 0 15px 0;
-      line-height: 1.8;
-    }
-
-    /* 列表样式 */
-    ul {
-      list-style: disc;
-      padding-left: 1.5em;
-      margin: 10px 0;
-    }
-    li {
-      margin-bottom: 8px;
-      line-height: 1.6;
-    }
-
-    /* 强调文字 */
-    strong {
-      font-weight: 600;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiahui Meng | Academic Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <!-- 联系方式及照片 -->
-    <div class="contact">
-      <!-- 此处替换为自己的照片 URL 或本地文件路径 -->
-      <img 
-        src="MENG.jpg" 
-        alt="Jiahui Meng Photo" 
-        class="profile-photo"
-      />
-      <h1>Jiahui Meng</h1>
-      <p>GH168, The Hong Kong Polytechnic University, Hong Kong SRS</p>
-      <p>
-        +852 51263040 | +86 13998860827 | 
-        <a href="mailto:jiahui.meng@connect.polyu.hk">jiahui.meng@connect.polyu.hk</a>
-      </p>
-      <p>
-        <a href="https://www.linkedin.com/in/meng-jiahui" target="_blank">LinkedIn</a>
-      </p>
-    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#technical">Technical</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#honors">Honors</a></li>
+        </ul>
+    </nav>
 
-    <!-- 教育背景 -->
-    <div class="section">
-      <h2>Education</h2>
-      <p>
-        <strong>University of Southern California</strong> (Aug 2023 – Dec 2024)<br/>
-        Master of Science in Electrical Engineering (GPA: 3.94/4.0)
-      </p>
-      <p>
-        <strong>Hong Kong Polytechnic University</strong> (Aug 2019 – May 2023)<br/>
-        Bachelor of Science in Internet and Multimedia Technologies with First Class Honors (GPA: 3.61/4.0)
-      </p>
-    </div>
+    <div class="container">
+        <header id="about">
+            <div class="profile-header">
+                <img src="MENG.jpg" alt="Jiahui Meng" class="profile-photo">
+                <div class="profile-info">
+                    <h1>Jiahui Meng</h1>
+                    <p class="subtitle">Research Associate / Project Associate @ The Hong Kong Polytechnic University</p>
+                    <div class="contact-links">
+                        <a href="mailto:jiahui.meng@connect.polyu.hk" class="icon-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/meng-jiahui" class="icon-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://jiahui-meng.github.io/" class="icon-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=AaZ3raAAAAAJ&hl=en" class="icon-link">
+                            <i class="ai ai-google-scholar"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <!-- 技能 -->
-    <div class="section">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, C++, Java, C#, HTML, Node.js, JavaScript, PHP</li>
-        <li><strong>Frameworks & Libraries:</strong> TensorFlow, PyTorch, Scikit-learn, JQuery</li>
-        <li><strong>Tools & Platforms:</strong> AWS, Docker, Cloud Computing, Blender, 3ds Max, Unity, Office 365</li>
-        <li><strong>Databases:</strong> MySQL, NoSQL</li>
-      </ul>
-    </div>
+        <main>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="research-item">
+                    <div class="research-header">
+                        <h3>University of Southern California</h3>
+                        <span class="research-meta">MSc in Electrical Engineering | Aug 2023 - Dec 2024</span>
+                    </div>
+                    <ul class="research-details">
+                        <li>GPA: 3.94/4.0</li>
+                        <li>Coursework: Advanced Machine Learning, Digital Signal Processing</li>
+                    </ul>
+                </div>
 
-    <!-- 工作经历 -->
-    <div class="section">
-      <h2>Work Experience</h2>
-      <p>
-        <strong>Hong Kong Polytechnic University, School of Nursing</strong><br/>
-        Research Associate / Project Associate (Jan 2022 – Now)
-      </p>
-      <p>AI-empowered digital contact tracing platform for COVID-19 outbreaks</p>
-      <p>An edge AI-based AR system for hand hygiene training in undergraduates of health related disciplines</p>
-    </div>
+                <div class="research-item">
+                    <div class="research-header">
+                        <h3>Hong Kong Polytechnic University</h3>
+                        <span class="research-meta">BSc in Internet and Multimedia Technologies | Aug 2019 - May 2023</span>
+                    </div>
+                    <ul class="research-details">
+                        <li>First Class Honors</li>
+                        <li>GPA: 3.61/4.0</li>
+                    </ul>
+                </div>
+            </section>
 
-    <!-- 研究经历 -->
-    <div class="section">
-      <h2>Research Experience</h2>
-      <p>
-        <strong>Hong Kong Polytechnic University, Electronic & Information Engineering</strong><br/>
-        (Aug 2022 - May 2023)
-      </p>
-      <p>Deep Learning for Engine Sound Detection and Recognition</p>
-      <ul>
-        <li>Developed deep-learning models achieving 90% accuracy in engine issue detection</li>
-        <li>Used MFCC for feature extraction, improving recognition precision by 15%</li>
-        <li>Compared ConvNet, ResNet, and DenseNet; found ResNet performed 5% better</li>
-        <li>Utilized transfer learning, reducing training time by 50%</li>
-      </ul>
-    </div>
+            <section i="Technical">
+                <h2>Technical Skills</h2>
+                <div class="research-item">
+                    <div class="research-header">
+                    </div>
+                    <ul class="research-details">
+                        <li><strong>Programming Languages:</strong> Python, C++, Java, C#, HTML, Node.js, JavaScript, PHP</li>
+                        <li><strong>Frameworks & Libraries:</strong> TensorFlow, PyTorch, Scikit-learn, JQuery</li>
+                        <li><strong>Tools & Platforms:</strong> AWS, Docker, Cloud Computing, Blender, 3ds Max, Unity, Office 365</li>
+                        <li><strong>Databases:</strong> MySQL, NoSQL</li>
+                    </ul>
+                </div>
+            </section>
 
-    <!-- 项目经历 -->
-    <div class="section">
-      <h2>Project Experience</h2>
-      <p>
-        <strong>Hong Kong Polytechnic University</strong><br/>
-        (Jan 2022 - May 2022)
-      </p>
-      <p>Dungeon Mission Game (Unity, C#)</p>
-      <ul>
-        <li>Developed a roguelike game in Unity with procedural generation</li>
-        <li>Implemented multiplayer using Photon PUN2 for 50+ concurrent players</li>
-        <li>Designed AI-driven enemies and bosses, increasing engagement by 40%</li>
-        <li>Published at 
-          <a href="https://simmer.io/@MENG/team-04-dungeon-mission" target="_blank">
-            Simmer.io
-          </a>
-        </li>
-      </ul>
-    </div>
+            <section i="work">
+                <h2>Work Experience</h2>
+                <div class="research-item">
+                    <div class="research-header">
+                        <h3>Hong Kong Polytechnic University, School of Nursing</h3>
+                        <span class="research-meta"> Research Associate / Project Associate | Jan 2022 – Present</span>
+                    </div>
+                    <ul class="research-details">
+                        <p>AI-empowered digital contact tracing platform for COVID-19 outbreaks</p>
+                        <p>An edge AI-based AR system for hand hygiene training in undergraduates of health related disciplines</p>
+                    </ul>
+                </div>
+            </section>
 
-    <!-- 荣誉奖项 -->
-    <div class="section">
-      <h2>Honors & Awards</h2>
-      <ul>
-        <li>Dean’s Honor List, Hong Kong Polytechnic University (2020-2021)</li>
-        <li>Global Student Ambassador Program (Top 20 out of 500) (2020-2021)</li>
-      </ul>
-    </div>
+            <section id="research">
+                <h2>Research Experience</h2>
+                <div class="research-item">
+                    <div class="research-header">
+                        <h3>Deep Learning for Engine Sound Recognition</h3>
+                        <span class="research-meta">Hong Kong Polytechnic University | Aug 2022 - May 2023</span>
+                    </div>
+                    <ul class="research-details">
+                        <li>Developed deep-learning models achieving 90% accuracy in engine issue detection</li>
+                        <li>Used MFCC for feature extraction, improving recognition precision by 15%</li>
+                        <li>Compared ConvNet, ResNet, and DenseNet; found ResNet performed 5% better</li>
+                        <li>Utilized transfer learning, reducing training time by 50%</li>
+                    </ul>
+                </div>
+            </section>
 
-    <!-- 论文发表 -->
-    <div class="section">
-      <h2>Publications</h2>
-      <ul>
-        <li>
-          <a href="https://doi.org/10.1016/j.idm.2024.02.002" target="_blank">
-            An AI-empowered Indoor Digital Contact Tracing System for COVID-19
-          </a>
-        </li>
-      </ul>
-    </div>
+            <section id="publications">
+                <h2>Publications</h2>
+                <div class="research-item">
+                    <div class="pub-info">
+                        <div class="pub-title">An AI-empowered Indoor Digital Contact Tracing System for COVID-19</div>
+                        <div class="pub-authors">Meng, J., Liu, J. Y. W., Yang, L., et al.</div>
+                        <div class="pub-meta">
+                            Infectious Disease Modelling, 2024. 
+                            <a href="https://doi.org/10.1016/j.idm.2024.02.002" class="doi-link">DOI:10.1016/j.idm.2024.02.002</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- 领导经历 -->
-    <div class="section">
-      <h2>Leadership</h2>
-      <p>
-        <strong>Hong Kong Polytechnic University Golden Z Club</strong>
-        (2020 – 2021)
-      </p>
-      <ul>
-        <li>Organized sign language and interview workshops with 50+ attendees</li>
-        <li>Led mentoring programs for South Asian children, improving academic performance by 20%</li>
-        <li>Coordinated volunteer education activities benefiting 100+ children</li>
-      </ul>
+            <section id="leadership">
+                <h2>Leadership Experience</h2>
+                <div class="research-item">
+                    <div class="research-header">
+                        <h3>Hong Kong Polytechnic University Golden Z Club</h3>
+                        <span class="research-meta">2020 – 2021</span>
+                    </div>
+                    <ul class="research-details">
+                        <li>Organized sign language and interview workshops with 50+ attendees</li>
+                        <li>Led mentoring programs for South Asian children, improving academic performance by 20%</li>
+                        <li>Coordinated volunteer education activities benefiting 100+ children</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="research">
+                <h2>Honors & Awards</h2>
+                <div class="research-item">
+                    <li>Dean’s Honor List, Hong Kong Polytechnic University (2020-2021)</li>
+                    <li>Global Student Ambassador Program (Top 20 out of 500) (2020-2021)</li>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Jiahui Meng. Hosted on GitHub Pages.</p>
+        </footer>
     </div>
-  </div>
 </body>
 </html>
